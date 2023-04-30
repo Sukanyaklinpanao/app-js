@@ -1,12 +1,52 @@
-<!DOCTYPE html>
-<html lang="en">
+<title>โปรแกรมคำนวณราคาสุทธิของสินค้าและบริการ </title>
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <style>
+        #inputValue {
+            color: rgb(2, 2, 23);
+            border: 5px solid currentColor;
+            block-size: 5%;
+            font-size: large;
+        }
+
+        body {
+            background-color: lightblue;
+        }
+
+        h1 {
+            color: palevioletred;
+            text-align: center;
+        }
+
+        p {
+            font-family: verdana;
+            font-size: 15px;
+        }
+    </style>
+
 </head>
+
 <body>
-    <h1>Git First Time </h1>
+    <center>
+        <br><br><br>
+        <h1>โปรแกรมคำนวณราคาสุทธิของสินค้าและบริการ</h1>
+        <h4 style="color:#404040">
+            <p>*กรุณา กรอกราคาสินค้าลงในช่องว่าง <br> แล้วคลิกเลือกประเภทภาษีที่คุณต้องการคำนวณ
+                ได้เลยค่ะ</p>
+        </h4><br>
+        <img src="https://คลังสื่อการสอน.com/wp-content/uploads/2021/11/IMG_3318-768x768.png" height="250"
+            alt="Accountant girl"><br><br><br>
+        <input id="inputValue" type="text"><br><br><br>
+        <button onclick="sevenPercentProgram(document.getElementById('inputValue').value)">
+            <b>
+                <p>ราคารวมภาษีมูลค่าเพิ่ม 7%</p></button><br><br>
+        <button onclick="threePercentProgram(document.getElementById('inputValue').value)">
+            <b>
+                <p>ราคาหลังหักภาษีค่าบริการ 3%</p></button><br><br>
+        <button onclick="fivePercentProgram(document.getElementById('inputValue').value)">
+            <b>
+                <p>ราคาหลังหักภาษีค่าเช่า 5%</p></button><br><br>
+    </center>
+
+    <script src="app.js"></script>
 </body>
-</html>
